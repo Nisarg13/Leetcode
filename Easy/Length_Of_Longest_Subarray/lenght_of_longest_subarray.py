@@ -1,6 +1,7 @@
 def find_length(nums, k):
     # curr is the current sum of the window
     left = curr = ans = 0
+    subarray_start = subarray_end = -1
     for right in range(len(nums)):
         curr += nums[right]
         while curr > k:
